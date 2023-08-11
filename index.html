@@ -1,78 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Application</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="content">
-            <section class="top res"><h1>Job Application </h1><h2>(web)</h2>
-            </section>
-            <section class="up_mid res" >
-                <div class="box1">
-                    <h4>First Name</h4>
-                   
-                        <input type="text" placeholder="Your First Name">
-                </div>
-                <div class="box2">
-                    <h4>Last Name</h4>
-                   
-                        <input type="text" >
-                </div>
-                
-            </section>
-            <section class="up_mid res">
-                <div class="box1">
-                    <h4>Email</h4>
-                    
-                        <input type="text" >
-                </div>
-                <div class="box2">
-                    <h4>Job Role </h4>
-                 <select name="jt" id="jd">
-                    <option value="sr">Select Job Role</option>
-                    <option value="Data Analyst">Data Analyst</option>
-                    <option value="React Developer">React Developer</option>
-                    <option value="Front End Developer">Front End Developer</option>
-                 </select>   
-                </div>
-            </section>
-            <section class="mid res">
-                <h4>Address</h4>
-                <textarea name="add" id="da" cols="48" rows="6"></textarea>
-            </section>
-            <section class="end res">
-                <div class="box1">
-                    <h4>City</h4>
-                   
-                        <input type="text" >
-                </div>
-                <div class="box2">
-                    <h4>Pincode</h4>
-                   
-                        <input type="text" >
-                </div>
-                
-            </section>
-            <section class="up_mid res">
-                <div class="box1">
-                    <h4>Start Date</h4>
-                    
-                        <input type="text" >
-                </div>
-                <div class="box2">
-                    <h4>Upload Your CV</h4>
-                    <input type="text" >
-            </section>
+      <div class="applybox">
+        <h1>Job Application <span class="small">(web)</span></h1>
+        <div class="form_container">
+          <div class="form_controler">
+            <label for="firstn">First Name</label>
+            <input type="text" id="firstn" placeholder="Enter Your First Name" />
+          </div>
+          <div class="form_controler">
+            <label for="Lastn">Last Name</label>
+            <input type="text" id="Lastn" placeholder="Enter Your Last Name" />
+          </div>
+          <div class="form_controler">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email" />
+          </div>
         
-        <footer class="res">
-            <button>Apply Now</button>
-        </footer>
+        <div class="form_controler">
+          <label for="jobr">Job Role</label>
+         <select name="jobr" id="jobr">
+            <option value="">Select Job Role</option>
+            <option value="Front-End">Front-End Developer</option>
+            <option value="Back-End">Back-End Developer</option>
+            <option value="Full-Stake">Full-Stake Developere</option>
+         </select>
+        </div>
+         <div class="form_controler item5">
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="35" rows="3" placeholder="Enter Your Address"></textarea>
+          </div>
+          <div class="form_controler">
+            <label for="city">City</label>
+            <input type="text" id="city"  />
+          </div>
+          <div class="form_controler">
+            <label for="pincode">Pincode</label>
+            <input type="number" id="pincode"  />
+          </div>
+          <div class="form_controler">
+            <label for="date">Date</label>
+            <input type="date" id="date"  />
+          </div>
+          <div class="form_controler">
+            <label for="upload">Upload your CV</label>
+            <input type="file" id="upload"  />
+          </div>
+        </div>
+          <div class="btn">
+              <button type="submit">Apply Now</button>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-</body>
+  </body>
 </html>
