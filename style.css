@@ -71,4 +71,11 @@ button{
     color: white;
     width: 80px;
     height: 30px;
+    border-radius: 7px;
+   
+}
+button:hover{
+    background-color: grey;
+    transition: 0.2s ease-in;
+    cursor: pointer;
 }
